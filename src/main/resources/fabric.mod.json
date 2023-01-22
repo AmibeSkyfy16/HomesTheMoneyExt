@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "homes_the_money_ext",
+  "version": "${version}",
+  "name": "Homes The Money Ext",
+  "description": "An extension for Homes mod. Add a money cost when using teleport command",
+  "authors": ["Skyfy16"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/homesthemoneyext/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      {
+        "adapter": "kotlin",
+        "value": "ch.skyfy.homesthemoneyext.HomesTheMoneyExt"
+      }
+    ],
+    "main": []
+  },
+  "mixins": [],
+  "depends": {
+    "homes_api": ">=1.0.4+1.19.3",
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3",
+    "fabric-language-kotlin": ">=1.9.0+kotlin.1.8.0",
+    "java": ">=17"
+  }
+}
